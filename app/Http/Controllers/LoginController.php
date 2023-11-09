@@ -8,7 +8,7 @@ class LoginController extends Controller
 {
     protected function getLogin()
     {
-        dd(123);
-        return 1;
+        $showLoginBox = true;
+        return view('login', ['showLoginBox' => $showLoginBox]);
     }
 }
