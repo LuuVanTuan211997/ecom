@@ -19,3 +19,7 @@ Route::get('/', function () {
 
 Route::get('/login','LoginController@getLogin')->name('login');
 Route::get('/logout','LoginController@getLogout');
+
+// Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
